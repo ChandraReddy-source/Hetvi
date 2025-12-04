@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Hetvi Fire Services</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; color:#333; }
+    header { background:#c40000; padding:10px 20px; display:flex; align-items:center; justify-content:space-between; color: #fff; position: sticky; top:0; z-index:1000; }
+    header img { height:60px; }
+    header nav a { color:white; margin-left:20px; text-decoration:none; font-weight:bold; }
+    header nav a:hover { text-decoration: underline; }
+
+    .hero { position: relative; height: 60vh; color: white; display:flex; align-items: center; justify-content: center; text-align: center; background: url('https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; }
+    .hero::after { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); }
+    .hero .inner { position: relative; z-index:1; }
+    .hero h1 { font-size: 3rem; margin:0; }
+    .hero p { font-size:1.2rem; margin:10px 0; }
+
+    section { padding:60px 20px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .services-grid, .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 20px; }
+    .card { border:1px solid #ddd; border-radius:8px; overflow:hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background:#fff; }
+    .card img { width:100%; display:block; }
+    .card-body { padding: 20px; }
+    .card-body h3 { margin-top:0; }
+    .card-body p { margin:0.5em 0; }
+
+    .cta { background:#c40000; color:white; text-align:center; padding:40px 20px; }
+    .cta a { display: inline-block; padding: 12px 30px; background:white; color:#c40000; border-radius:4px; text-decoration:none; font-weight:bold; margin-top:10px; }
+
+    .contact-box { background:#f7f7f7; padding:20px; border-radius:8px; }
+    footer { background:#222; color:#ccc; text-align:center; padding:20px 0; margin-top:40px; }
+
+    @media (max-width:768px) {
+      .hero h1 { font-size:2.2rem; }
+      header { flex-direction: column; align-items: flex-start; }
+      header nav { margin-top:10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><img src="bc1d76e4-4dbb-4f37-b484-1d9ed30f788e.png" alt="Hetvi Fire Services Logo"></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="inner">
+    <h1>Hetvi Fire Services</h1>
+    <p>Your Trusted Partner for Fire Safety – Extinguishers, Hydrants, Alarms & AMC</p>
+  </div>
+</section>
+
+<section id="about" class="container">
+  <h2>About Us</h2>
+  <p>
+    Hetvi Fire Services specializes in comprehensive fire protection solutions — supplying ISI-certified extinguishers, installing fire hydrant and alarm systems, conducting safety audits, and offering AMC (Annual Maintenance Contracts).  
+    With a mission to safeguard lives and property, we aim to deliver reliable, high-quality fire safety services to residential, commercial, and industrial clients.
+  </p>
+</section>
+
+<section id="services" class="container">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="card">
+      <div class="card-body">
+        <h3>Extinguisher Supply & Refilling</h3>
+        <p>Supply, servicing and refilling of ABC / CO₂ / Foam / Water-based extinguishers.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3>Fire Hydrant Systems</h3>
+        <p>Installation, maintenance and testing of hydrant networks & hose reels.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3>Fire Alarm & Detection</h3>
+        <p>Smoke/heat detectors, alarm panels, and system commissioning.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3>Annual Maintenance Contracts</h3>
+        <p>Periodic inspection and maintenance of fire safety systems to ensure compliance and safety.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="container">
+  <h2>Our Products</h2>
+  <div class="products-grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250?text=ABC+Extinguisher" alt="ABC Extinguisher">
+      <div class="card-body">
+        <h3>ABC Dry Powder Extinguisher</h3>
+        <p>Multipurpose extinguisher, suitable for Class A, B, C fires.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250?text=CO2+Extinguisher" alt="CO2 Extinguisher">
+      <div class="card-body">
+        <h3>CO₂ Fire Extinguisher</h3>
+        <p>For electrical or flammable liquid fires.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250?text=Hydrant+Valve" alt="Hydrant Valve">
+      <div class="card-body">
+        <h3>Fire Hydrant Valves & Hoses</h3>
+        <p>High quality hydrant accessories and hoses.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250?text=Smoke+Detector" alt="Smoke Detector">
+      <div class="card-body">
+        <h3>Smoke & Heat Detectors</h3>
+        <p>Industry-grade detectors for early fire detection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Need a Fire Safety Quote?</h2>
+    <a href="#contact">Contact Us Now</a>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Hetvi Fire Services</strong></p>
+    <p>
+      Door No: 11-1-199, Opposite Dr Achytha Prasad Doctor Hospital,<br>
+      Arvind Nagar 1st & 2nd Cross, Aravinda Nagar,<br>
+      Anantapur – 515001, Andhra Pradesh
+    </p>
+    <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+    <p><strong>Email:</strong> info@hetvifireservices.com</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Hetvi Fire Services — All Rights Reserved.
+</footer>
+
+</body>
+</html>
